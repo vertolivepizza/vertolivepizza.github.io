@@ -225,6 +225,10 @@ footer a:hover {
   background-color: #45a049;
 }
 
+.des{
+  font-size: small;
+}
+
 @media screen and (max-width: 1050px) {
   #hero-content-info{
     width: 100%;
