@@ -26,29 +26,27 @@
     </header>
 
     <div id="accueil"></div>  
-    <section class="hero">
-        <div class="container">
-          <script>
-            document.write(	
-              '<div id="hero-content">'+
-                  '<div id="hero-content-pic">'+
-                    '<img src="../img/logo.png">'+
-                  '</div>'+
-                  '<div id="hero-content-info">'+
-                      '<div id="hero-content-info-title">'+
-                          '<h1>Vert olive pizza</h1>'+
-                          '<div></div>'+
-                      '</div>'+
-                      '<p>'+accueil.i1[lan]+'</p>'+
-                      '<p><br></p>'+
-                      '<p id="hero-content-info-txt01">'+accueil.i2[lan]+'</p>'+
-                  '</div>'+
+    <div class="container">
+      <script>
+        document.write(	
+          '<div id="hero-content">'+
+              '<div id="hero-content-pic">'+
+                '<img src="../img/imgAccueil02.jpg">'+
               '</div>'+
-              '<p><br></p>'
-            );
-          </script>
-        </div>
-    </section>
+              '<div id="hero-content-info">'+
+                  '<div id="hero-content-info-title">'+
+                      '<h1>Vert olive pizza</h1>'+
+                      '<div></div>'+
+                  '</div>'+
+                  '<p>'+accueil.i1[lan]+'</p>'+
+                  '<p><br></p>'+
+                  '<p id="hero-content-info-txt01">'+accueil.i2[lan]+'</p>'+
+              '</div>'+
+          '</div>'+
+          '<p><br></p>'
+        );
+      </script> 
+    </div>
 
     <div id="info"><br><br><br></div>
     <section class="sep">
@@ -64,17 +62,27 @@
         <p>
             Aujourd'hui, j'ai décidé de revenir sur les lieux qui m'ont vu grandir. Avec une pâte maturée lentement, légère et croustillante, des ingrédients exclusivement frais et des idées de pizzas originales, je suis ravi de partager ma passion culinaire avec ma ville natale, Villemur.
         </p>
-        <p>
-            Situé à l'entrée de Villemur (sur le parking du magasin TOUT FAIRE MATÉRIAUX, LE P'TIT PANIER et le TABAC), notre kiosque vous offre une expérience culinaire unique dans un cadre convivial.
-        </p>
-        <p>
-            C'est avec grand plaisir que je vous accueille du mardi au samedi de 18h à 21h30 pour déguster nos délicieuses pizzas.
-        </p>
+        
+        <div id="hero-info-kiosque">
+          <img src="../img/kiosque.jpg" class="kiosque-photo"> 
+          <div>
+            <p>
+              Situé à l'entrée de Villemur (sur le parking du magasin TOUT FAIRE MATÉRIAUX, LE P'TIT PANIER et le TABAC), notre kiosque vous offre une expérience culinaire unique dans un cadre convivial.
+            </p>
+            <p>
+                C'est avec grand plaisir que je vous accueille du mardi au samedi de 18h à 21h30 pour déguster nos délicieuses pizzas.
+            </p>
+          </div>
+        </div>
+        
         <p>
             Alors à bientôt,
             <br>
             Aurélien
-        </p>    
+        </p>
+
+          
+         
       </div>
     </section>
 
@@ -113,29 +121,27 @@
         </div>
       </section>
 
-      <section class="hero-piza-du-mois">
-        <div class="container">
-              <script>
-                document.write(	
-                  '<div id="hero-piza-du-mois">'+
-                      '<div id="hero-piza-du-mois-pic">'+
-                        '<img src="../pizzaDuMois/pizza.jpg">'+
-                      '</div>'+
-                      '<div id="hero-piza-du-mois-info">'+
-                          '<div id="hero-piza-du-mois-info-title">'+
-                              '<h1>'+pizza.nom+'</h1>'+
-                              '<div></div>'+
-                          '</div>'+
-                          '<p><br></p>'+
-                          '<p id="hero-piza-du-mois-info-txt01">'+pizza.description+'</p>'+
-                      '</div>'+
-                  '</div>'+
-                  '<p><br></p>'
-                );
-              </script>
-            </div>
-        </section>
 
+      
+      <div class="container">
+          <script>
+            document.write(	
+              '<section class="sep">'+
+                  '<h1>'+pizza.nom+'</h1>'+
+                  '<div></div>'+
+              '</section>'+
+              '<div id="hero-pizza-du-mois">'+
+                  '<div id="hero-pizza-du-mois-pic">'+
+                    '<img src="../pizzaDuMois/pizza.jpg">'+
+                  '</div>'+
+                  '<div id="hero-pizza-du-mois-info">'+
+                      '<p id="hero-pizza-du-mois-info-txt01">'+pizza.description+'</p>'+
+                  '</div>'+
+              '</div>'+
+              '<p><br></p>'
+            );
+          </script>
+      </div>
 
       <div id="contact"><br><br><br></div>
       <section class="sep">
@@ -150,20 +156,16 @@
               '<div class="contact-container">'+
                 '<div class="contact-info">'+
                   '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/phone.png"/>'+
-                    '<span>'+contact.i2[lan]+' : <a href="tel:'+all.num[lan]+'">'+all.num[lan]+'</a></span>'+
+                    '<span><img src="https://img.icons8.com/material-rounded/24/000000/phone.png"/>'+contact.i2[lan]+' : <a href="tel:'+all.num[lan]+'">'+all.num[lan]+'</a></span>'+
                   '</div>'+
                   '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/email.png"/>'+
-                    '<span>Email : <a href="mailto:'+all.adresseEmail[lan]+'">'+all.adresseEmail[lan]+'</a></span>'+
+                    '<span><img src="https://img.icons8.com/material-rounded/24/000000/email.png"/>Email : <a href="mailto:'+all.adresseEmail[lan]+'">'+all.adresseEmail[lan]+'</a></span>'+
                   '</div>'+
                   '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/facebook.png"/>'+
-                    '<span>Facebook : <a href="'+ReseauxSociaux.facebook[lan]+'" target="_blank">'+all.nom[lan]+'</a></span>'+
+                    '<span><img src="https://img.icons8.com/material-rounded/24/000000/facebook.png"/>Facebook : <a href="'+ReseauxSociaux.facebook[lan]+'" target="_blank">'+all.nom[lan]+'</a></span>'+
                   '</div>'+
                   '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png">'+
-                    '<span>Instagram : <a href="'+ReseauxSociaux.instagram[lan]+'" target="_blank">'+all.insta[lan]+'</a></span>'+
+                    '<span><img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png">Instagram : <a href="'+ReseauxSociaux.instagram[lan]+'" target="_blank">'+all.insta[lan]+'</a></span>'+
                   '</div>'+
                 '</div>'+
               '</div>'+
