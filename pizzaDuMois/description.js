@@ -1,4 +1,8 @@
 pizza = {
-  "nom": "Pizza d'Avril",
-  "description": "Ce mois ci chez Vert Olive Pizza on innove avec une recette incroyable. Une base crème d'ail, Brie de Meaux AOP, Pancetta, noisettes torréfiées, tomates cerises et les asperges vertes de la ferme EARL De Blessou. À très bientôt"
+  "nom": "Pizza de mai",
+  "description": "La pizza du mois de mai en avant première dès aujourd'hui <br><br>" +
+  "Base pesto de pistache maison, Emmental et mozzarella, mortadelle à la pistache, basilic et burrata*<br>"+
+  "On s'envole vers l'Italie !"+
+  
+  "<br><br>* il est possible, en fonction des stocks que la burrata soit remplacée par de la Stracciatella."
 };
