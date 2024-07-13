@@ -1,4 +1,7 @@
 pizza = {
-  "nom": "Pizza de juin",
-  "description": "Aïe aïe aïe l'été arrive avec sa chaleur! Chez VERT OLIVE c'est un peu la même ambiance avec la pizza du mois: Base tomate, tome de brebis, chorizo, roquette, tomates séchées."
+  "nom": "Pizza de juillet",
+  "description": "La pizza de juillet est là chez vert olive pizza <br><br>" +
+"Inspirée par les saveurs estivales : <br>" +
+"&nbsp Base crème d'ail, camembert, herbes de Provence, noix et pancetta<br><br>"+
+"Un délice pour les papilles !"
 };
