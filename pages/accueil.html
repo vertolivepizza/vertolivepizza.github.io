@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vert olive pizza</title>
-  <meta name="description" content="Découvrez les délices de la pizzeria Vert Olive Pizza à Villemur-sur-Tarn. Savourez des pizzas artisanales préparées avec des ingrédients frais et de qualité. Profitez de notre large choix de saveurs et de nos options végétariennes. Commandez par téléphone ou venez déguster sur place dans une ambiance chaleureuse." />
-  <!--link rel="icon" href="https://github.com/vertolivepizza/vertolivepizza.github.io/blob/main/img/logo.png" type="image/png"-->
+  <title>Vert Olive Pizza</title>
+  <meta name="description" content="Découvrez les délices de la pizzeria Vert Olive Pizza à Villemur-sur-Tarn. Savourez des pizzas artisanales préparées avec des ingrédients frais et de qualité. Ouvert les midis du mardi au vendredi. Profitez de notre large choix de saveurs et de nos options végétariennes. Commandez par téléphone et emportez vos pizzas." />
+  
+  <!-- CSS Files -->
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/info.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/pizzaDuMois.css">
   <link rel="stylesheet" href="../css/contact.css">
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="../js/langue.js"></script>
-  <script src="../pizzaDuMois/description.js"></script>
 
+  <!-- Favicon and Icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../logo/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="../logo/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="../logo/apple-icon-72x72.png">
@@ -26,7 +25,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="../logo/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="../logo/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../logo/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="../logo/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../logo/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../logo/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="../logo/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../logo/favicon-16x16.png">
@@ -34,35 +33,49 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="../logo/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- JS Files -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="../js/langue.js"></script>
+  <script src="../pizzaDuMois/description.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
       <script src="../js/header.js"></script>
     </header>
 
+    <!-- Banner to highlight mid-day opening -->
+    <div style="background-color: #f4e242; text-align: center; padding: 10px; font-weight: bold;">
+      🎉 Ouvert les midis du mardi au vendredi, de 11h30 à 14h00 ! 🎉
+    </div>
+
+    <!-- Home Section -->
     <div id="accueil"></div>  
     <div class="container">
       <script>
         document.write(	
           '<div id="hero-content">'+
-              '<div id="hero-content-pic">'+
-                '<img src="../img/imgAccueil02.jpg" alt="Image d accueil">'+
+            '<div id="hero-content-pic">'+
+              '<img src="../img/imgAccueil02.jpg" alt="Image d accueil">'+
+            '</div>'+
+            '<div id="hero-content-info">'+
+              '<div id="hero-content-info-title">'+
+                '<h1>Vert olive pizza</h1>'+
+                '<div></div>'+
               '</div>'+
-              '<div id="hero-content-info">'+
-                  '<div id="hero-content-info-title">'+
-                      '<h1>Vert olive pizza</h1>'+
-                      '<div></div>'+
-                  '</div>'+
-                  '<p>'+accueil.i1[lan]+'</p>'+
-                  '<p><br></p>'+
-                  '<p id="hero-content-info-txt01">'+accueil.i2[lan]+'</p>'+
-              '</div>'+
+              '<p>'+accueil.i1[lan]+'</p>'+
+              '<p><br></p>'+
+              '<p id="hero-content-info-txt01">'+accueil.i2[lan]+'</p>'+
+              '<p><strong>Ouvert les midis du mardi au vendredi de 11h30 à 14h00</strong></p>'+  // Ajout pour mettre en valeur les horaires
+            '</div>'+
           '</div>'+
           '<p><br></p>'
         );
       </script> 
     </div>
 
+    <!-- Menu Section -->
     <div id="menu"><br><br><br></div>
     <section class="sep">
       <h1>Le Menu</h1>
@@ -98,62 +111,64 @@
       </div>
     </section>
 
+    <!-- Pizza du mois Section -->
     <div class="container">
       <script>
         document.write(	
           '<section class="sep">'+
-              '<h1>'+pizza.nom+'</h1>'+
-              '<div></div>'+
+            '<h1>'+pizza.nom+'</h1>'+
+            '<div></div>'+
           '</section>'+
           '<div id="hero-pizza-du-mois">'+
-              '<div id="hero-pizza-du-mois-pic">'+
-                '<img src="../pizzaDuMois/pizza.jpg" alt="Pizza du mois">'+
-              '</div>'+
-              '<div id="hero-pizza-du-mois-info">'+
-                  '<p id="hero-pizza-du-mois-info-txt01">'+pizza.description.replace(/\r?\n/g, '<br>')+'</p>'+
-              '</div>'+
+            '<div id="hero-pizza-du-mois-pic">'+
+              '<img src="../pizzaDuMois/pizza.jpg" alt="Pizza du mois">'+
+            '</div>'+
+            '<div id="hero-pizza-du-mois-info">'+
+              '<p id="hero-pizza-du-mois-info-txt01">'+pizza.description.replace(/\r?\n/g, '<br>')+'</p>'+
+            '</div>'+
           '</div>'+
           '<p><br></p>'
         );
       </script>
     </div>
 
-    
+    <!-- About Section -->
     <div id="info"><br><br><br></div>
     <section class="sep">
-        <h1>À propos</h1>
-        <div></div>
+      <h1>À propos</h1>
+      <div></div>
     </section>
 
     <section class="hero-info">
       <div class="container">
         <p>
-            Natif de Villemur et issu d'une famille de commerçants, j'ai appris le métier de pizzaïolo de manière autodidacte. J'ai pu mettre en pratique mes recettes et les faire découvrir à toute une clientèle de Montauban durant 9 ans.
+          Natif de Villemur et issu d'une famille de commerçants, j'ai appris le métier de pizzaïolo de manière autodidacte. J'ai pu mettre en pratique mes recettes et les faire découvrir à toute une clientèle de Montauban durant 9 ans.
         </p>
         <p>
-            Aujourd'hui, j'ai décidé de revenir sur les lieux qui m'ont vu grandir. Avec une pâte maturée lentement, légère et croustillante, des ingrédients exclusivement frais et des idées de pizzas originales, je suis ravi de partager ma passion culinaire avec ma ville natale, Villemur.
+          Aujourd'hui, j'ai décidé de revenir sur les lieux qui m'ont vu grandir. Avec une pâte maturée lentement, légère et croustillante, des ingrédients exclusivement frais et des idées de pizzas originales, je suis ravi de partager ma passion culinaire avec ma ville natale, Villemur.
         </p>
         
         <div id="hero-info-kiosque">
           <img src="../img/kiosque.jpg" class="kiosque-photo" alt="Kiosque">
           <div>
             <p>
-              Situé à l'entrée de Villemur (sur le parking du magasin TOUT FAIRE MATÉRIAUX, LE P'TIT PANIER et le TABAC), notre kiosque vous offre une expérience culinaire unique dans un cadre convivial.
+              Situé à l'entrée de Villemur (sur le parking du magasin TOUT FAIRE MATÉRIAUX, LE P'TIT PANIER et le TABAC), notre kiosque vous permet de commander vos pizzas à emporter facilement et rapidement.
             </p>
             <p>
-              C'est avec grand plaisir que je vous accueille du lundi au vendredi de 11h30 à 14h00 et de 18h00 à 21h30, et le samedi de 18h00 à 21h30 pour déguster nos délicieuses pizzas. Nous sommes fermés le dimanche.
+              C'est avec grand plaisir que je vous accueille <strong>du mardi au vendredi de 11h30 à 14h00</strong> et de 18h00 à 21h30, et le samedi de 18h00 à 21h30 pour commander nos délicieuses pizzas. Nous sommes fermés le dimanche et le lundi.
             </p>
           </div>
         </div>
         
         <p>
-            Alors à bientôt,
-            <br>
-            Aurélien
+          Alors à bientôt,
+          <br>
+          Aurélien
         </p>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <div id="contact"><br><br><br></div>
     <section class="sep">
       <script>document.write('<h1>' +	contact.i1[lan] + '</h1>')</script>
