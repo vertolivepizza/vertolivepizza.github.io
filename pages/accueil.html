@@ -1,338 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vert Olive Pizza</title>
-  <meta name="description" content="Découvrez les délices de la pizzeria Vert Olive Pizza à Villemur-sur-Tarn. Savourez des pizzas artisanales préparées avec des ingrédients frais et de qualité. Ouvert les midis du mardi au vendredi. Profitez de notre large choix de saveurs et de nos options végétariennes. Commandez par téléphone et emportez vos pizzas." />
-  
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/info.css">
-  <link rel="stylesheet" href="../css/menu.css">
-  <link rel="stylesheet" href="../css/pizzaDuMois.css">
-  <link rel="stylesheet" href="../css/contact.css">
-
-  <!-- Favicon and Icons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="../logo/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../logo/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../logo/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../logo/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../logo/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../logo/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../logo/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../logo/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../logo/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="../logo/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../logo/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../logo/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../logo/favicon-16x16.png">
-  <link rel="manifest" href="../logo/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../logo/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- JS Files -->
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="../js/langue.js"></script>
-  <script src="../pizzaDuMois/description.js"></script>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-      <script src="../js/header.js"></script>
-    </header>
-
-    <!-- Event Banner 
-    <div style="background: linear-gradient(to right, #ffb300, #ffdf00); color:#8a4e29; text-align: center; padding: 20px; font-family: Arial, sans-serif; font-size: 18px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
-      <h2 style="margin: 0;">🎉 Félicitations à tous les participants ! 🎉</h2>
-      <p style="margin: 10px 0;">
-        Tous les tickets <strong>"UNE PIZZA OFFERTE"</strong> ont été trouvés ! Merci à tous d'avoir participé à cette incroyable chasse au trésor pour célébrer nos 11 ans. 🍕
-      </p>
-      <p style="margin: 10px 0;">
-        Restez connectés pour d'autres événements et surprises à venir. Nous avons hâte de vous revoir chez Vert Olive Pizza pour partager encore plus de bons moments ! 🎁
-      </p>
-      <p style="margin: 10px 0;">
-        Merci pour votre enthousiasme et votre soutien. Vous êtes les meilleurs ! ❤️
-      </p>
-    </div>
-
-  -->
-
-
-
-  <!-- Banner to highlight mid-day opening
-    <div style="background-color: #f4e242; text-align: center; padding: 10px; font-weight: bold;">
-      🎉 Maintenant ouvert les midis du mardi au vendredi, de 11h30 à 14h00 ! 🎉
-    </div>
-
-    
-<section style="background-color: #fffcec; padding: 30px; font-family: Arial, sans-serif; color: #4a4a4a; text-align: center;">
-  <div style="max-width: 800px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; overflow: hidden; background-color: #ffffff; position: relative;">
-    <div style="padding: 10px; background-color: #8a4e29; color: #ffffff;text-align: left;">
-      <h2 id="title01">La der des ders</h2>
-    </div>
-    <div id="text01">
-      <p style="font-size: 18px; line-height: 1.6;">
-        Venez fêter le départ d'Aurélien le <strong>samedi 21 décembre 2024</strong> au kiosque "Vert Olive Pizza" dès 18h. <br>
-        Il cédera son savoir-faire, son tablier et ses pelles à pizza à Benoît. <br><br>
-        Ça sera l'occasion encore une fois de passer un bon moment ensemble alors à très bientôt.<br>
-        <strong>Vert olivement votre 🍕😉</strong>
-      </p>
-    </div>
-
-    <div id="pic01">
-      <img src="../img/der.png" alt="Aurélien">
-    </div>
-
-    <img src="../img/derp2.png" alt="Pizza Decoration" style="position: absolute; top: -30px; right: -30px; width: 150px; height: auto; transform: rotate(15deg); z-index: 1;">
-
-    <img src="../img/derp1.png" alt="Pizza Decoration" style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: auto; transform: rotate(-15deg); z-index: 1; pointer-events: none;">
-  </div>
-</section>
-
-<style>
-
-  #title01 {
-    margin: 0; font-size: 28px; position: relative; padding-left: 10px;
-  }
-
-  #text01 {
-    padding: 20px; 
-    text-align: center; 
-    padding-right: 300px;
-  }
-
-  #pic01 {
-    text-align: right; 
-    margin-right: 30px; 
-    margin-bottom: 30px; 
-    margin-top: -180px;
-  }
-
-  #pic01 img{
-    width: 100%; max-width: 250px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  @media (max-width: 674px) {
-
-  #title01 {
-    margin: 0; font-size: 24px; position: relative; padding-left: 10px;
-  }
-  #text01{
-    margin-top: 50px;
-    padding: 20px; 
-    text-align: center; 
-    padding-right: 20px;
-  }
-
-  #pic01 {
-    text-align: right; 
-    margin-right: 30px; 
-    margin-bottom: 30px; 
-    margin-top: 0px;
-  }
-
-  #pic01 img{
-    margin-right: 10px;
-    max-width: 80%;
-  }
-  }
-</style>
-
-
-
-
-
-     Home Section -->
-
-     
-    <div id="accueil"></div>  
-    <div class="container">
-      <script>
-        document.write(	
-          '<div id="hero-content">'+
-            '<div id="hero-content-pic">'+
-              '<img src="../img/imgAccueil02.jpg" alt="Image d accueil">'+
-            '</div>'+
-            '<div id="hero-content-info">'+
-              '<div id="hero-content-info-title">'+
-                '<h1>Vert olive pizza</h1>'+
-                '<div></div>'+
-              '</div>'+
-              '<p>'+accueil.i1[lan]+'</p>'+
-              '<p><br></p>'+
-              '<p id="hero-content-info-txt01">'+accueil.i2[lan]+'</p>'+
-            '</div>'+
-          '</div>'+
-          '<p><br></p>'
-        );
-      </script> 
-    </div>
-
-    <!-- Menu Section -->
-    <div id="menu"><br><br><br></div>
-    <section class="sep">
-      <h1>Le Menu</h1>
-      <div></div>
-    </section>
-
-    <section class="hero-menu">
-      <div class="container">
-        <div class="items">
-            <div class="item">
-                <div class="image img1"></div>
-            </div>
-            <div class="item">
-                <div class="image img2"></div>
-            </div>
-            <div class="item active">
-                <div class="image img3"></div>
-            </div>
-            <div class="item next">
-                <div class="image2 img1"></div>
-            </div>
-            <div class="item">
-                <div class="image2 img2"></div>
-            </div>
-            <div class="item prev">
-                <div class="image2 img3"></div>
-            </div>
-            <div class="button-container no-select">
-                <div class="button">&#8249;</div>
-                <div class="button">&#8250;</div>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pizza du mois Section 
-    <div class="container">
-      <script>
-        document.write(	
-          '<section class="sep">'+
-            '<h1>'+pizza.nom+'</h1>'+
-            '<div></div>'+
-          '</section>'+
-          '<div id="hero-pizza-du-mois">'+
-            '<div id="hero-pizza-du-mois-pic">'+
-              '<img src="../pizzaDuMois/pizza.jpg" alt="Pizza du mois">'+
-            '</div>'+
-            '<div id="hero-pizza-du-mois-info">'+
-              '<p id="hero-pizza-du-mois-info-txt01">'+pizza.description.replace(/\r?\n/g, '<br>')+'</p>'+
-            '</div>'+
-          '</div>'+
-          '<p><br></p>'
-        );
-      </script>
-    </div>
-
-     About Section 
-    <div id="info"><br><br><br></div>
-    <section class="sep">
-      <h1>À propos</h1>
-      <div></div>
-    </section>
-
-    <section class="hero-info">
-      <div class="container">
-        <p>
-          Natif de Villemur et issu d'une famille de commerçants, j'ai appris le métier de pizzaïolo de manière autodidacte. J'ai pu mettre en pratique mes recettes et les faire découvrir à toute une clientèle de Montauban durant 9 ans.
-        </p>
-        <p>
-          Aujourd'hui, j'ai décidé de revenir sur les lieux qui m'ont vu grandir. Avec une pâte maturée lentement, légère et croustillante, des ingrédients exclusivement frais et des idées de pizzas originales, je suis ravi de partager ma passion culinaire avec ma ville natale, Villemur.
-        </p>
-        
-        <div id="hero-info-kiosque">
-          <img src="../img/kiosque.jpg" class="kiosque-photo" alt="Kiosque">
-          <div>
-            <p>
-              Situé à l'entrée de Villemur (sur le parking du magasin TOUT FAIRE MATÉRIAUX, LE P'TIT PANIER et le TABAC), notre kiosque vous permet de commander vos pizzas à emporter facilement et rapidement.
-            </p>
-            <p>
-              C'est avec grand plaisir que je vous accueille <strong>du mardi au vendredi de 11h30 à 14h00</strong> et de 18h00 à 21h30, et le samedi de 18h00 à 21h30 pour commander nos délicieuses pizzas. Nous sommes fermés le dimanche et le lundi.
-            </p>
-          </div>
-        </div>
-        
-        <p>
-          Alors à bientôt,
-          <br>
-          Aurélien
-        </p>
-      </div>
-    </section>
-  -->
-
-  
+  <title>Établissement fermé</title>
+  <meta name="description" content="L'établissement est fermé. Merci pour votre confiance et votre soutien." />
   <style>
-    #maintenance-message {
-      background: linear-gradient(to right, #ffb300, #ffdf00);
-      color: #8a4e29;
+    body {
+      background-color: #faf9f6;
+      color: #333;
+      font-family: "Arial", sans-serif;
       text-align: center;
-      padding: 30px;
-      font-family: Arial, sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      margin: 50px auto;
-      max-width: 800px;
+      padding: 50px;
+    }
+    .message-box {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 600px;
+      margin: 100px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #8a4e29;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
     }
   </style>
-  
-
-
-
-    <!-- Contact Section -->
-    <div id="contact"><br><br><br></div>
-    <section class="sep">
-      <script>document.write('<h1>' +	contact.i1[lan] + '</h1>')</script>
-      <div></div>
-    </section>
-
-    <section class="contacts">
-      <div class="container">
-        <script>
-          document.write(	
-            '<div class="contact-container">'+
-              '<div class="contact-info">'+
-                '<div class="contact-item">'+
-                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/phone.png"/>'+contact.i2[lan]+' : <a href="tel:'+all.num[lan]+'">'+all.num[lan]+'</a></span>'+
-                '</div>'+
-                '<div class="contact-item">'+
-                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/email.png"/>Email : <a href="mailto:'+all.adresseEmail[lan]+'">'+all.adresseEmail[lan]+'</a></span>'+
-                '</div>'+
-                '<div class="contact-item">'+
-                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/facebook.png"/>Facebook : <a href="'+ReseauxSociaux.facebook[lan]+'" target="_blank">'+all.nom[lan]+'</a></span>'+
-                '</div>'+
-                '<div class="contact-item">'+
-                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png">Instagram : <a href="'+ReseauxSociaux.instagram[lan]+'" target="_blank">'+all.insta[lan]+'</a></span>'+
-                '</div>'+
-              '</div>'+
-            '</div>'+
-            '<div class="contact-map">'+
-              '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.4252651954707!2d1.492612776568589!3d43.84701357109364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac1f3a685a7135%3A0x598091297aaf7654!2s1%20Av.%20Michel%20Rocard%2C%2031340%20Villemur-sur-Tarn!5e0!3m2!1sfr!2sfr!4v1689116379173!5m2!1sfr!2sfr" id="iframePage" onload="loadIframe(this)" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'+
-            '</div>'
-          )
-        </script>
-      </div>
-    </section>
-
-    <script>
-      function loadIframe(iframe) {
-        console.log("L'iframe est chargé.");
-      }
-    </script>
-
-    <script src="animations/accueil/accueilAnim.js"></script>
-    <script src="../js/menu.js"></script>
-
-    <footer>
-      <script src="../js/footer.js"></script>
-    </footer>
+</head>
+<body>
+  <div class="message-box">
+    <h1>Établissement fermé</h1>
+    <p>Nous vous remercions sincèrement pour votre confiance, votre fidélité et tous les bons moments partagés.</p>
+    <p>Cet établissement est désormais fermé, mais vos sourires et votre soutien resteront inoubliables.</p>
+    <p>Merci encore, et à bientôt peut-être pour de nouvelles aventures 🍀</p>
+    <p>Vert Olive Pizza</p>
+  </div>
 </body>
 </html>
